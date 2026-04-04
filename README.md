@@ -108,7 +108,7 @@ Nosana provides a hosted **Qwen3.5-27B-AWQ-4bit** endpoint for challenge partici
 
 ```env
 OPENAI_API_KEY=nosana
-OPENAI_API_URL=https://3gsrmj6gchzyws9bnc835apd4fh6t5tyeppmbxmzrzhn.node.k8s.prd.nos.ci/v1
+OPENAI_API_URL=https://6vq2bcqphcansrs9b88ztxfs88oqy7etah2ugudytv2x.node.k8s.prd.nos.ci/v1
 MODEL_NAME=Qwen3.5-27B-AWQ-4bit
 ```
 
@@ -130,6 +130,24 @@ OPENAI_API_KEY=ollama
 OPENAI_API_URL=http://127.0.0.1:11434/v1
 MODEL_NAME=qwen3.5:27b
 ```
+
+---
+
+## Configure Your Embedding Model
+
+Nosana provides a hosted **Qwen3-Embedding-0.6B** endpoint for embeddings (used for RAG, semantic search, and memory). Update your `.env`:
+
+```env
+OPENAI_EMBEDDING_URL=https://4yiccatpyxx773jtewo5ccwhw1s2hezq5pehndb6fcfq.node.k8s.prd.nos.ci/v1
+OPENAI_EMBEDDING_API_KEY=nosana
+OPENAI_EMBEDDING_MODEL=Qwen3-Embedding-0.6B
+OPENAI_EMBEDDING_DIMENSIONS=1024
+```
+
+**Model Details:**
+- **Model ID:** `Qwen3-Embedding-0.6B`
+- **Dimensions:** 1024
+- **Provider:** Nosana decentralized inference
 
 ---
 
@@ -249,7 +267,7 @@ Edit `nos_job_def/nosana_eliza_job_definition.json` and update the Docker image 
         "ports": ["3000:3000"],
         "env": {
           "OPENAI_API_KEY": "nosana",
-          "OPENAI_API_URL": "https://3gsrmj6gchzyws9bnc835apd4fh6t5tyeppmbxmzrzhn.node.k8s.prd.nos.ci/v1",
+          "OPENAI_API_URL": "https://6vq2bcqphcansrs9b88ztxfs88oqy7etah2ugudytv2x.node.k8s.prd.nos.ci/v1",
           "MODEL_NAME": "Qwen3.5-27B-AWQ-4bit"
         }
       }
@@ -448,6 +466,16 @@ Submit your project via the official submission page: **[superteam.fun/earn/list
 - **GitHub** — Open an issue in this repo if you find problems with the template
 
 ---
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=nosana-ci%2Fagent-challenge&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=nosana-ci/agent-challenge&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=nosana-ci/agent-challenge&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=nosana-ci/agent-challenge&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ## License
 
