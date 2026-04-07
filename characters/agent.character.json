@@ -6,8 +6,11 @@
     "@elizaos/plugin-openai"
   ],
   "settings": {
-    "model": "Qwen3.5-27B-AWQ-4bit",
+    "model": "gemma4:26b",
     "modelProvider": "openai",
+    "openai": {
+    "baseURL": "https://4ksj3tve5bazqwkuyqdhwdpcar4yutcuxphwhckrdxmu.node.k8s.prd.nos.ci/v1"
+    },
     "clients": [],
     "secrets": {}
   },
