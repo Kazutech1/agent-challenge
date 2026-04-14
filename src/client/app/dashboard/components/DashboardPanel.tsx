@@ -20,7 +20,8 @@ export default function DashboardPanel({ isFocused, theme }: { isFocused: boolea
   const fetchSignals = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:4000/api/signals");
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:4000";
+      const res = await fetch(`${backendUrl}/api/signals`);
       if (!res.ok) throw new Error(`Status ${res.status}`);
       const json = await res.json();
       setData(json);
