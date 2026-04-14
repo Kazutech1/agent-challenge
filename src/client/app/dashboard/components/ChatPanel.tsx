@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Send, Cpu, Activity, Terminal, Zap, ShieldCheck, Globe } from "lucide-react";
 import { useElizaChat } from "../../../hooks/useElizaChat";
 
-import { ThemePreset } from "../page";
+import { ThemePreset } from "../../theme-engine";
 
 const IQ5Core = ({ isThinking, isConnected, isFocused, theme }: { isThinking: boolean; isConnected: boolean; isFocused: boolean; theme: ThemePreset }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
